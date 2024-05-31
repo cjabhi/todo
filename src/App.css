@@ -1,4 +1,14 @@
 /* General container styling */
+#heading {
+  color: #4CAF50; 
+  font-size: 32px; 
+  font-weight: bold; 
+  text-align: center; 
+  padding: 20px; 
+  margin: 20px 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -23,10 +33,25 @@
 
 .section h2 {
   text-align: center;
-  color: rgb(55, 54, 54);
   border-bottom: 2px solid black;
+  color: #1b1e1d;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  
 }
-
+#pending{
+  color: #c82333;
+}
+#progress{
+  color: #0056b3;
+}
+#complete{
+  color: #218838;
+}
 /* New task button styling */
 .newtask {
   cursor: pointer;
@@ -39,7 +64,7 @@
   background-color: rgb(176, 122, 122);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container {
     flex-direction: column;
   }
@@ -139,6 +164,11 @@
 .task p {
   margin: 0;
 }
+.task :active{
+  opacity: 0.7;
+  background: rgb(120, 120, 181);
+  cursor: grab;
+}
 
 /* Start button styling */
 .start-button,
@@ -187,3 +217,23 @@
   font-size: 14px;
   color: #4ec645;
 }
+
+#droparea{
+  background-color: #bdbbbb;
+}
+.show{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+.hide{
+  opacity: 0;
+}
+
