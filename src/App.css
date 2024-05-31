@@ -228,10 +228,12 @@ body{
 
 #droparea{
   background-color: #bdbbbb;
+  /* height: 200px; */
 }
 .show{
   margin: auto;
   width: 90%;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
