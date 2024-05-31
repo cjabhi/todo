@@ -1,3 +1,22 @@
+### `setup`
+1. pull the folder from github 
+2. or create react app and copy my code from provided google drive link
+3. run the command 'npm i' to install all the dependencies in the main folder in terminal
+4. then run the project in localhost using npm start
+
+### `running instructions`
+1. start application using 'npm start' command in terminal
+2. the application has 3 sections as provided in assignment guide
+3. there is a new task button in 1st section (pending section) when clicked on it a form will be visible which can be made invisible by again click on that button or submitting the form
+4. after submitting the form a new task will be created in pending section
+5. the task will have 2 buttons start and cross 
+6. the task can be moved to inprogress section by clicking start section
+7. or by dragging and dropping at the top of inprogress section
+8. note: the task can be dropped to specific placess only (for ex: at the just starting of section or between two tasks )
+9. similarly the task can also moved to completed section
+10. when the task is moved to completed section then a completion date (that is the time at which it is moved ) will be assigne to that task
+11. thats how all the functionalities as given in assignment are working.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +87,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
