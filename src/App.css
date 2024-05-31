@@ -1,38 +1,189 @@
-.App {
+/* General container styling */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Section styling */
+.section {
+  width: 32%;
+  height: 90vh;
+  margin: auto;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.section::-webkit-scrollbar {
+  display: none;
+}
+
+.section h2 {
   text-align: center;
+  color: rgb(55, 54, 54);
+  border-bottom: 2px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* New task button styling */
+.newtask {
+  cursor: pointer;
+  background-color: rgb(158, 137, 137);
+  margin: 20px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.newtask:hover {
+  background-color: rgb(176, 122, 122);
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    flex-direction: column;
+  }
+  .section {
+    width: 90%;
+    margin-top: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Addtask component styling */
+.add-task-container {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-task-container form {
   display: flex;
   flex-direction: column;
+}
+
+.add-task-container form div {
+  margin-bottom: 15px;
+}
+
+.add-task-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.add-task-container input,
+.add-task-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.add-task-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-task-container button:hover {
+  background-color: #218838;
+}
+
+/* Task list styling */
+.task-list {
+  margin-top: 20px;
+}
+
+/* Individual task styling */
+.task {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task h3 {
+  margin: 0 0 5px 0;
+}
+
+.task p {
+  margin: 0;
+}
+
+/* Start button styling */
+.start-button,
+.complete-button,
+.delete-button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.start-button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.complete-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.completed-symbol {
+  font-size: 24px;
+  color: green;
+}
+
+.completion-date {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #4ec645;
 }
