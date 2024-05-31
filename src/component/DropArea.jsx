@@ -4,10 +4,10 @@ const DropArea = ({onDrop}) => {
   const [showdrop , setShowdrop] = useState(false)
   useEffect(()=>{
 
-    document.addEventListener('dragstart', ()=>{setShowdrop(true)});
-    document.addEventListener('dragend', ()=>{setShowdrop(false)});
-    document.addEventListener('drop', ()=>{setShowdrop(false)});
-  }, [])
+    // document.addEventListener('dragstart', ()=>{setShowdrop(true)});
+    // document.addEventListener('dragend', ()=>{setShowdrop(false)});
+    // document.addEventListener('drop', ()=>{setShowdrop(false)});
+  })
   return (
     <div 
     onDragEnter={()=>{setShowdrop(true)}} 
